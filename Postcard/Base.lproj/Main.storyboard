@@ -50,7 +50,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="37" y="82" width="326" height="57"/>
+                                    <rect key="frame" x="37" y="82" width="326" height="50"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f8i-vw-RI6">
@@ -61,6 +61,15 @@
                                     <rect key="frame" x="37" y="242" width="326" height="30"/>
                                 </variation>
                             </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Jr-nw-gsL" userLabel="nameLabel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="140" width="195" height="32"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -70,6 +79,7 @@
                                 <exclude reference="hxv-VD-qnq"/>
                                 <exclude reference="v0t-AC-Izx"/>
                                 <exclude reference="f8i-vw-RI6"/>
+                                <exclude reference="2Jr-nw-gsL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -79,6 +89,7 @@
                                 <include reference="hxv-VD-qnq"/>
                                 <include reference="v0t-AC-Izx"/>
                                 <include reference="f8i-vw-RI6"/>
+                                <include reference="2Jr-nw-gsL"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,6 +98,7 @@
                         <outlet property="enterNameTextField" destination="f8i-vw-RI6" id="Tm9-L1-mLd"/>
                         <outlet property="mailButton" destination="hxv-VD-qnq" id="dLc-si-53A"/>
                         <outlet property="messageLabel" destination="v0t-AC-Izx" id="UTI-0X-Mui"/>
+                        <outlet property="nameLabel" destination="2Jr-nw-gsL" id="zkw-Ew-6my"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
